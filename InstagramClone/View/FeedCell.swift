@@ -16,7 +16,7 @@ class FeedCell: UICollectionViewCell {
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.isUserInteractionEnabled = true
-        iv.image = UIImage(named: "venom-7")
+        iv.image = Images.venom
         iv.setDimensions(width: 32, height: 32)
         iv.layer.cornerRadius = 32 / 2
         return iv
@@ -36,27 +36,27 @@ class FeedCell: UICollectionViewCell {
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.isUserInteractionEnabled = true
-        iv.image = UIImage(named: "venom-7")
+        iv.image = Images.venom
         return iv
     }()
     
     private lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(named: "like_unselected"), for: .normal)
+        button.setImage(Images.like_unselected, for: .normal)
         button.tintColor = .black
         return button
     }()
     
     private lazy var commentButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(named: "comment"), for: .normal)
+        button.setImage(Images.comment, for: .normal)
         button.tintColor = .black
         return button
     }()
     
     private lazy var shareButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(named: "send2"), for: .normal)
+        button.setImage(Images.send2, for: .normal)
         button.tintColor = .black
         return button
     }()
