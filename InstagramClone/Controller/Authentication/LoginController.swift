@@ -11,6 +11,8 @@ class LoginController: UIViewController {
     
     //MARK: - Properties
     
+    private var viewModel = LoginViewModel()
+    
     private let iconImage: UIImageView = {
         let iv = UIImageView(image: Images.instagram_logo_white)
         iv.contentMode = .scaleAspectFill
@@ -37,6 +39,7 @@ class LoginController: UIViewController {
         button.layer.cornerRadius = 5
         button.setHeight(50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.isEnabled = false
         return button
     }()
     
@@ -59,13 +62,23 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureNotificationObservers()
     }
     
     //MARK: - Selectors
     
-    @objc func handleShowSignUp() {
+    @objc private func handleShowSignUp() {
         let controller = RegistrationController()
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc private func textDidChange(sender: UITextField) {
+        if sender == emailTextField {
+            viewModel.email = sender.text
+        } else {
+            viewModel.password = sender.text
+        }
+        updateForm()
     }
     
     //MARK: - Helpers
@@ -94,5 +107,19 @@ class LoginController: UIViewController {
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.centerX(inView: view)
         dontHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, paddingBottom: 16)
+    }
+    
+    private func configureNotificationObservers() {
+        emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+    }
+}
+
+//MARK: - FormViewModel
+
+extension LoginController: FormViewModel {
+    func updateForm() {
+        loginButton.isEnabled = viewModel.formIsValid
+        loginButton.backgroundColor = viewModel.buttonBackgroundColor
     }
 }
