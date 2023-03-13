@@ -19,8 +19,10 @@ class CustomTextField: UITextField {
         
         borderStyle = .none
         textColor = .white
+        tintColor = .white
         keyboardAppearance = .dark
         keyboardType = .emailAddress
+        layer.cornerRadius = 5
         backgroundColor = UIColor(white: 1, alpha: 0.1)
         setHeight(50)
         attributedPlaceholder = NSAttributedString(string: placeholder,
