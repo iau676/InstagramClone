@@ -83,8 +83,8 @@ final class RegistrationController: UIViewController {
                 print("DEBUG: Failed to register user \(error)")
                 return
             }
-            print("DEBUG: Successfully registered user with firestore..")
-            self.navigationController?.popViewController(animated: true)
+            
+            self.dismiss(animated: true)
         }
     }
     
