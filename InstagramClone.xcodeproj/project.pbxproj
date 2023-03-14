@@ -10,6 +10,8 @@
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
 		704F2DBD29C07EB800DD2003 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBC29C07EB800DD2003 /* ImageUploader.swift */; };
 		704F2DBF29C07ECD00DD2003 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBE29C07ECD00DD2003 /* AuthService.swift */; };
+		704F2DC129C0EA5500DD2003 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DC029C0EA5500DD2003 /* ProfileCell.swift */; };
+		704F2DC329C0EA6600DD2003 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DC229C0EA6600DD2003 /* ProfileHeader.swift */; };
 		705B3D0329BCB871005CFEC2 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0229BCB871005CFEC2 /* FeedCell.swift */; };
 		705B3D0529BCB9B4005CFEC2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0429BCB9B4005CFEC2 /* Extensions.swift */; };
 		705B3D0729BD064A005CFEC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0629BD064A005CFEC2 /* Constants.swift */; };
@@ -44,6 +46,8 @@
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		704F2DBC29C07EB800DD2003 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		704F2DBE29C07ECD00DD2003 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		704F2DC029C0EA5500DD2003 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		704F2DC229C0EA6600DD2003 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		705B3D0229BCB871005CFEC2 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		705B3D0429BCB9B4005CFEC2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		705B3D0629BD064A005CFEC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		704F2DC429C0EA6900DD2003 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				704F2DC029C0EA5500DD2003 /* ProfileCell.swift */,
+				704F2DC229C0EA6600DD2003 /* ProfileHeader.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		705B3D0C29BF00B8005CFEC2 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +189,7 @@
 		70BB488529BA004000D26BE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				704F2DC429C0EA6900DD2003 /* Profile */,
 				705B3D0229BCB871005CFEC2 /* FeedCell.swift */,
 				705B3D1329BF143B005CFEC2 /* CustomTextField.swift */,
 			);
@@ -287,6 +301,7 @@
 				70BB488E29BB30BB00D26BE3 /* ImageSelectorController.swift in Sources */,
 				705B3D1A29BF4776005CFEC2 /* AuthenticationViewModel.swift in Sources */,
 				705B3D0E29BF0105005CFEC2 /* LoginController.swift in Sources */,
+				704F2DC329C0EA6600DD2003 /* ProfileHeader.swift in Sources */,
 				70BB489029BB30C900D26BE3 /* NotificationController.swift in Sources */,
 				70BB488C29BB30A900D26BE3 /* SearchController.swift in Sources */,
 				70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */,
@@ -294,6 +309,7 @@
 				70BB488A29BB309E00D26BE3 /* FeedController.swift in Sources */,
 				70BB488829BB2F0E00D26BE3 /* MainTabController.swift in Sources */,
 				705B3D0529BCB9B4005CFEC2 /* Extensions.swift in Sources */,
+				704F2DC129C0EA5500DD2003 /* ProfileCell.swift in Sources */,
 				70BB487029B9F0E300D26BE3 /* SceneDelegate.swift in Sources */,
 				705B3D0729BD064A005CFEC2 /* Constants.swift in Sources */,
 				705B3D1429BF143B005CFEC2 /* CustomTextField.swift in Sources */,
