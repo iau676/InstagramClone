@@ -22,6 +22,7 @@ class ProfileHeader: UICollectionReusableView {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "bird one"
+        label.textColor = .darkGray
         label.font = UIFont.boldSystemFont(ofSize: 14)
         return label
     }()
@@ -143,7 +144,8 @@ class ProfileHeader: UICollectionReusableView {
     
     func attributedStatText(value: Int, label: String) -> NSAttributedString {
         let attributedText = NSMutableAttributedString(string: "\(value)\n",
-                                                       attributes: [.font: UIFont.boldSystemFont(ofSize: 14)])
+                                                       attributes: [.font: UIFont.boldSystemFont(ofSize: 14),
+                                                                    .foregroundColor: UIColor.darkGray])
         attributedText.append(NSAttributedString(string: label,
                                                  attributes: [.font: UIFont.systemFont(ofSize: 14),
                                                               .foregroundColor: UIColor.lightGray]))
