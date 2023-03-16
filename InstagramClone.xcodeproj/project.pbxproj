@@ -65,6 +65,7 @@
 		70BB488E29BB30BB00D26BE3 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB488D29BB30BB00D26BE3 /* ImageSelectorController.swift */; };
 		70BB489029BB30C900D26BE3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB488F29BB30C900D26BE3 /* NotificationController.swift */; };
 		70BB489229BB30D700D26BE3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB489129BB30D700D26BE3 /* ProfileController.swift */; };
+		70E3A54C29C352D8007D7302 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3A54B29C352D8007D7302 /* ProfileHeaderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		70BB488D29BB30BB00D26BE3 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		70BB488F29BB30C900D26BE3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		70BB489129BB30D700D26BE3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		70E3A54B29C352D8007D7302 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				705B3D1929BF4776005CFEC2 /* AuthenticationViewModel.swift */,
+				70E3A54B29C352D8007D7302 /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				70BB489029BB30C900D26BE3 /* NotificationController.swift in Sources */,
 				7054EF2229C34EAC00F51EB5 /* User.swift in Sources */,
 				70BB488C29BB30A900D26BE3 /* SearchController.swift in Sources */,
+				70E3A54C29C352D8007D7302 /* ProfileHeaderViewModel.swift in Sources */,
 				70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */,
 				70BB489229BB30D700D26BE3 /* ProfileController.swift in Sources */,
 				70BB488A29BB309E00D26BE3 /* FeedController.swift in Sources */,
