@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol AuthenticationDelegate: AnyObject {
+    func authenticationDidComplete()
+}
+
 class LoginController: UIViewController {
     
     //MARK: - Properties
     
     private var viewModel = LoginViewModel()
+    weak var delegate: AuthenticationDelegate?
     
     private let iconImage: UIImageView = {
         let iv = UIImageView(image: Images.instagram_logo_white)
@@ -77,13 +82,13 @@ class LoginController: UIViewController {
                 print("DEBUG: Failed to log user in \(error)")
                 return
             }
-            
-            self.dismiss(animated: true)
+            self.delegate?.authenticationDidComplete()
         }
     }
     
     @objc private func handleShowSignUp() {
         let controller = RegistrationController()
+        controller.delegate = delegate
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

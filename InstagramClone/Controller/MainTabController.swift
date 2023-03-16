@@ -9,13 +9,22 @@ import UIKit
 import FirebaseAuth
 
 class MainTabController: UITabBarController {
+    
+    //MARK: - Properties
+    
+    private var user: User? {
+        didSet {
+            guard let user = user else { return }
+            configureViewControllers(withUser: user)
+        }
+    }
 
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         checkIfUserLoggedIn()
-        configureViewControllers()
+        fetchUser()
     }
     
     //MARK: - API
@@ -24,6 +33,7 @@ class MainTabController: UITabBarController {
         if Auth.auth().currentUser == nil {
             DispatchQueue.main.async {
                 let controller = LoginController()
+                controller.delegate = self
                 let nav = UINavigationController(rootViewController: controller)
                 nav.modalPresentationStyle = .fullScreen
                 self.present(nav, animated: true)
@@ -31,9 +41,15 @@ class MainTabController: UITabBarController {
         }
     }
     
+    private func fetchUser() {
+        UserService.fetchUser { user in
+            self.user = user
+        }
+    }
+    
     //MARK: - Helpers
 
-    private func configureViewControllers() {
+    private func configureViewControllers(withUser user: User) {
         view.backgroundColor = .white
         
         let layout = UICollectionViewFlowLayout()
@@ -53,15 +69,14 @@ class MainTabController: UITabBarController {
                                                          selectedImage: Images.like_selected,
                                                          rootViewController: NotificationController())
         
-        let profileLayout = UICollectionViewFlowLayout()
+        let profileController = ProfileController(user: user)
         let profile = templateNavigationController(unselectedImage: Images.profile_unselected,
                                                    selectedImage: Images.profile_selected,
-                                                   rootViewController: ProfileController(collectionViewLayout: profileLayout))
+                                                   rootViewController: profileController)
         
         viewControllers = [feed, search, imageSelector, notifications, profile]
         
         tabBar.tintColor = .black
-        
         
     }
     
@@ -73,4 +88,13 @@ class MainTabController: UITabBarController {
         return nav
     }
 
+}
+
+//MARK: - AuthenticationDelegate    
+
+extension MainTabController: AuthenticationDelegate {
+    func authenticationDidComplete() {
+        fetchUser()
+        self.dismiss(animated: true)
+    }
 }
