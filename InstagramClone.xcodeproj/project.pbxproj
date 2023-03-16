@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
+		7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */; };
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
 		704F2DBD29C07EB800DD2003 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBC29C07EB800DD2003 /* ImageUploader.swift */; };
 		704F2DBF29C07ECD00DD2003 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBE29C07ECD00DD2003 /* AuthService.swift */; };
@@ -71,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		704F2DBC29C07EB800DD2003 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		704F2DBE29C07ECD00DD2003 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			children = (
 				705B3D1929BF4776005CFEC2 /* AuthenticationViewModel.swift */,
 				70E3A54B29C352D8007D7302 /* ProfileHeaderViewModel.swift */,
+				7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				70E3A54C29C352D8007D7302 /* ProfileHeaderViewModel.swift in Sources */,
 				70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */,
 				70BB489229BB30D700D26BE3 /* ProfileController.swift in Sources */,
+				7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */,
 				70BB488A29BB309E00D26BE3 /* FeedController.swift in Sources */,
 				7054EF2029C34C4600F51EB5 /* UserService.swift in Sources */,
 				70BB488829BB2F0E00D26BE3 /* MainTabController.swift in Sources */,
