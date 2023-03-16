@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
 		704F2DBD29C07EB800DD2003 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBC29C07EB800DD2003 /* ImageUploader.swift */; };
 		704F2DBF29C07ECD00DD2003 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBE29C07ECD00DD2003 /* AuthService.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		704F2DBC29C07EB800DD2003 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		704F2DBE29C07ECD00DD2003 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				704F2DC429C0EA6900DD2003 /* Profile */,
 				705B3D0229BCB871005CFEC2 /* FeedCell.swift */,
 				705B3D1329BF143B005CFEC2 /* CustomTextField.swift */,
+				7042BB1329C3851B00C1BAA3 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				70BB488E29BB30BB00D26BE3 /* ImageSelectorController.swift in Sources */,
 				705B3D1A29BF4776005CFEC2 /* AuthenticationViewModel.swift in Sources */,
 				705B3D0E29BF0105005CFEC2 /* LoginController.swift in Sources */,
+				7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */,
 				704F2DC329C0EA6600DD2003 /* ProfileHeader.swift in Sources */,
 				70BB489029BB30C900D26BE3 /* NotificationController.swift in Sources */,
 				7054EF2229C34EAC00F51EB5 /* User.swift in Sources */,
