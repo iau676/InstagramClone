@@ -40,6 +40,8 @@
 		704F2F2329C1CA3400DD2003 /* FirebaseDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704F2F0829C1CA2E00DD2003 /* FirebaseDatabase.xcframework */; };
 		704F2F2429C1CA3500DD2003 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704F2F0929C1CA2F00DD2003 /* nanopb.xcframework */; };
 		704F2F2629C1CA7800DD2003 /* gRPCCertificates-Cpp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 704F2F2529C1CA7800DD2003 /* gRPCCertificates-Cpp.bundle */; };
+		7054EF2029C34C4600F51EB5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054EF1F29C34C4600F51EB5 /* UserService.swift */; };
+		7054EF2229C34EAC00F51EB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054EF2129C34EAC00F51EB5 /* User.swift */; };
 		705B3D0329BCB871005CFEC2 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0229BCB871005CFEC2 /* FeedCell.swift */; };
 		705B3D0529BCB9B4005CFEC2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0429BCB9B4005CFEC2 /* Extensions.swift */; };
 		705B3D0729BD064A005CFEC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0629BD064A005CFEC2 /* Constants.swift */; };
@@ -101,6 +103,8 @@
 		704F2F0829C1CA2E00DD2003 /* FirebaseDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseDatabase.xcframework; sourceTree = "<group>"; };
 		704F2F0929C1CA2F00DD2003 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
 		704F2F2529C1CA7800DD2003 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
+		7054EF1F29C34C4600F51EB5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7054EF2129C34EAC00F51EB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		705B3D0229BCB871005CFEC2 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		705B3D0429BCB9B4005CFEC2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		705B3D0629BD064A005CFEC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -273,6 +277,7 @@
 			children = (
 				704F2DBC29C07EB800DD2003 /* ImageUploader.swift */,
 				704F2DBE29C07ECD00DD2003 /* AuthService.swift */,
+				7054EF1F29C34C4600F51EB5 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 		70BB488629BA004200D26BE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7054EF2129C34EAC00F51EB5 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -411,10 +417,12 @@
 				705B3D0E29BF0105005CFEC2 /* LoginController.swift in Sources */,
 				704F2DC329C0EA6600DD2003 /* ProfileHeader.swift in Sources */,
 				70BB489029BB30C900D26BE3 /* NotificationController.swift in Sources */,
+				7054EF2229C34EAC00F51EB5 /* User.swift in Sources */,
 				70BB488C29BB30A900D26BE3 /* SearchController.swift in Sources */,
 				70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */,
 				70BB489229BB30D700D26BE3 /* ProfileController.swift in Sources */,
 				70BB488A29BB309E00D26BE3 /* FeedController.swift in Sources */,
+				7054EF2029C34C4600F51EB5 /* UserService.swift in Sources */,
 				70BB488829BB2F0E00D26BE3 /* MainTabController.swift in Sources */,
 				705B3D0529BCB9B4005CFEC2 /* Extensions.swift in Sources */,
 				704F2DC129C0EA5500DD2003 /* ProfileCell.swift in Sources */,

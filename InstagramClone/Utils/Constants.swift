@@ -6,6 +6,11 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
+import FirebaseStorage
+
+let COLLECTION_USERS = Firestore.firestore().collection("users")
 
 enum Images {
     static let plus                      = UIImage(named: "cancel_shadow")
