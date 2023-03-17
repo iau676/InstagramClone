@@ -10,6 +10,8 @@
 		7005EAC029C47F770034A6E7 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EABF29C47F770034A6E7 /* UploadPostController.swift */; };
 		7005EAC229C482AC0034A6E7 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC129C482AC0034A6E7 /* InputTextView.swift */; };
 		7005EAC429C4B6130034A6E7 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC329C4B6130034A6E7 /* PostService.swift */; };
+		7005EAC629C4C1390034A6E7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC529C4C1390034A6E7 /* Post.swift */; };
+		7005EAC829C4C4B40034A6E7 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */; };
 		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
 		7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */; };
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
@@ -77,6 +79,8 @@
 		7005EABF29C47F770034A6E7 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		7005EAC129C482AC0034A6E7 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		7005EAC329C4B6130034A6E7 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		7005EAC529C4C1390034A6E7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -317,6 +321,7 @@
 				705B3D1929BF4776005CFEC2 /* AuthenticationViewModel.swift */,
 				70E3A54B29C352D8007D7302 /* ProfileHeaderViewModel.swift */,
 				7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */,
+				7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				7054EF2129C34EAC00F51EB5 /* User.swift */,
+				7005EAC529C4C1390034A6E7 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7005EAC829C4C4B40034A6E7 /* PostViewModel.swift in Sources */,
 				705B3D1029BF0112005CFEC2 /* RegistrationController.swift in Sources */,
 				70BB487229B9F0E300D26BE3 /* ViewController.swift in Sources */,
 				7005EAC029C47F770034A6E7 /* UploadPostController.swift in Sources */,
@@ -447,6 +454,7 @@
 				70BB488A29BB309E00D26BE3 /* FeedController.swift in Sources */,
 				7054EF2029C34C4600F51EB5 /* UserService.swift in Sources */,
 				70BB488829BB2F0E00D26BE3 /* MainTabController.swift in Sources */,
+				7005EAC629C4C1390034A6E7 /* Post.swift in Sources */,
 				705B3D0529BCB9B4005CFEC2 /* Extensions.swift in Sources */,
 				7005EAC429C4B6130034A6E7 /* PostService.swift in Sources */,
 				704F2DC129C0EA5500DD2003 /* ProfileCell.swift in Sources */,
