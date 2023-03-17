@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7005EAC029C47F770034A6E7 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EABF29C47F770034A6E7 /* UploadPostController.swift */; };
 		7005EAC229C482AC0034A6E7 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC129C482AC0034A6E7 /* InputTextView.swift */; };
+		7005EAC429C4B6130034A6E7 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC329C4B6130034A6E7 /* PostService.swift */; };
 		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
 		7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */; };
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
@@ -75,6 +76,7 @@
 /* Begin PBXFileReference section */
 		7005EABF29C47F770034A6E7 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
 		7005EAC129C482AC0034A6E7 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		7005EAC329C4B6130034A6E7 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				704F2DBC29C07EB800DD2003 /* ImageUploader.swift */,
 				704F2DBE29C07ECD00DD2003 /* AuthService.swift */,
 				7054EF1F29C34C4600F51EB5 /* UserService.swift */,
+				7005EAC329C4B6130034A6E7 /* PostService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				7054EF2029C34C4600F51EB5 /* UserService.swift in Sources */,
 				70BB488829BB2F0E00D26BE3 /* MainTabController.swift in Sources */,
 				705B3D0529BCB9B4005CFEC2 /* Extensions.swift in Sources */,
+				7005EAC429C4B6130034A6E7 /* PostService.swift in Sources */,
 				704F2DC129C0EA5500DD2003 /* ProfileCell.swift in Sources */,
 				70BB487029B9F0E300D26BE3 /* SceneDelegate.swift in Sources */,
 				705B3D0729BD064A005CFEC2 /* Constants.swift in Sources */,

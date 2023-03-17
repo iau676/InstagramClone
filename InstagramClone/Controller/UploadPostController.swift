@@ -7,15 +7,24 @@
 
 import UIKit
 
+protocol UploadPostControllerDelegate: AnyObject {
+    func controllerDidFinishUploadingPost(_ controller: UploadPostController)
+}
+
 class UploadPostController: UIViewController {
     
     //MARK: - Properties
+    
+    weak var delegate: UploadPostControllerDelegate?
+    
+    var selectedImage: UIImage? {
+        didSet { photoImageView.image = selectedImage }
+    }
     
     private let photoImageView: UIImageView = {
        let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
-        iv.image = Images.venom
         return iv
     }()
     
@@ -49,7 +58,20 @@ class UploadPostController: UIViewController {
     }
     
     @objc private func didTapDone() {
-        print("DEBUG: Share post here..")
+        guard let image = selectedImage else { return }
+        guard let caption = captionTextView.text else { return }
+        
+        showLoader(true)
+        PostService.uploadPost(caption: caption, image: image) { error in
+            self.showLoader(false)
+            
+            if let error = error {
+                print("DEBUG: Failed to upload post \(error)")
+                return
+            }
+            
+            self.delegate?.controllerDidFinishUploadingPost(self)
+        }
     }
     
     @objc private func checkMaxLength(_ textView: UITextView) {
