@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7005EAC029C47F770034A6E7 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EABF29C47F770034A6E7 /* UploadPostController.swift */; };
+		7005EAC229C482AC0034A6E7 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC129C482AC0034A6E7 /* InputTextView.swift */; };
 		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
 		7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */; };
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
@@ -71,6 +73,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7005EABF29C47F770034A6E7 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
+		7005EAC129C482AC0034A6E7 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -274,6 +278,7 @@
 			children = (
 				705B3D0429BCB9B4005CFEC2 /* Extensions.swift */,
 				705B3D0629BD064A005CFEC2 /* Constants.swift */,
+				7005EAC129C482AC0034A6E7 /* InputTextView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				70BB488D29BB30BB00D26BE3 /* ImageSelectorController.swift */,
 				70BB488F29BB30C900D26BE3 /* NotificationController.swift */,
 				70BB489129BB30D700D26BE3 /* ProfileController.swift */,
+				7005EABF29C47F770034A6E7 /* UploadPostController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 			files = (
 				705B3D1029BF0112005CFEC2 /* RegistrationController.swift in Sources */,
 				70BB487229B9F0E300D26BE3 /* ViewController.swift in Sources */,
+				7005EAC029C47F770034A6E7 /* UploadPostController.swift in Sources */,
 				704F2DBD29C07EB800DD2003 /* ImageUploader.swift in Sources */,
 				704F2DBF29C07ECD00DD2003 /* AuthService.swift in Sources */,
 				705B3D0329BCB871005CFEC2 /* FeedCell.swift in Sources */,
@@ -430,6 +437,7 @@
 				7054EF2229C34EAC00F51EB5 /* User.swift in Sources */,
 				70BB488C29BB30A900D26BE3 /* SearchController.swift in Sources */,
 				70E3A54C29C352D8007D7302 /* ProfileHeaderViewModel.swift in Sources */,
+				7005EAC229C482AC0034A6E7 /* InputTextView.swift in Sources */,
 				70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */,
 				70BB489229BB30D700D26BE3 /* ProfileController.swift in Sources */,
 				7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */,

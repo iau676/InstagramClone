@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import YPImagePicker
 
 class MainTabController: UITabBarController {
     
@@ -51,6 +52,7 @@ class MainTabController: UITabBarController {
 
     private func configureViewControllers(withUser user: User) {
         view.backgroundColor = .white
+        self.delegate = self
         
         let layout = UICollectionViewFlowLayout()
         let feed = templateNavigationController(unselectedImage: Images.home_unselected,
@@ -87,6 +89,19 @@ class MainTabController: UITabBarController {
         nav.navigationBar.tintColor = .blue
         return nav
     }
+    
+    private func didFinishPickingMedia(_ picker: YPImagePicker) {
+        picker.didFinishPicking { items, _ in
+            picker.dismiss(animated: false) {
+                guard let selectedImage = items.singlePhoto?.image else { return }
+                
+                let controller = UploadPostController()
+                let nav = UINavigationController(rootViewController: controller)
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: false)
+            }
+        }
+    }
 
 }
 
@@ -96,5 +111,32 @@ extension MainTabController: AuthenticationDelegate {
     func authenticationDidComplete() {
         fetchUser()
         self.dismiss(animated: true)
+    }
+}
+
+//MARK: - UITabBarControllerDelegate
+
+extension MainTabController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        let index = viewControllers?.firstIndex(of: viewController)
+        
+        if index == 2 {
+            var config = YPImagePickerConfiguration()
+            config.library.mediaType = .photo
+            config.shouldSaveNewPicturesToAlbum = false
+            config.startOnScreen = .library
+            config.screens = [.library]
+            config.hidesStatusBar = false
+            config.hidesBottomBar = false
+            config.library.maxNumberOfItems = 1
+            
+            let picker = YPImagePicker(configuration: config)
+            picker.modalPresentationStyle = .fullScreen
+            present(picker, animated: false)
+            
+            didFinishPickingMedia(picker)
+        }
+        
+        return true
     }
 }
