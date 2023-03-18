@@ -93,6 +93,8 @@ extension FeedController {
             cell.viewModel = PostViewModel(post: posts[indexPath.row])
         }
         
+        cell.delegate = self
+        
         return cell
     }
 }
@@ -108,5 +110,15 @@ extension FeedController: UICollectionViewDelegateFlowLayout {
         height += 60
         
         return CGSize(width: width, height: height)
+    }
+}
+
+
+//MARK: - FeedCellDelegate
+
+extension FeedController: FeedCellDelegate {
+    func cell(_ cell: FeedCell, wantsToShowComments post: Post) {
+        let controller = CommentController(collectionViewLayout: UICollectionViewFlowLayout())
+        navigationController?.pushViewController(controller, animated: true)
     }
 }

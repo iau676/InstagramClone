@@ -37,11 +37,12 @@ struct PostService {
     
     static func fetchPosts(forUser uid: String, completion: @escaping([Post]) -> Void) {
         let query = COLLECTION_POSTS.whereField("ownerUid", isEqualTo: uid)
-            //.order(by: "timestamp", descending: true)
 
         query.getDocuments { snapshot, error in
             guard let documents = snapshot?.documents else { return }
-            let posts = documents.map({ Post(postId: $0.documentID, dictionary: $0.data()) })
+            
+            var posts = documents.map({ Post(postId: $0.documentID, dictionary: $0.data()) })
+            posts = posts.sorted(by: { $0.timestamp.seconds > $1.timestamp.seconds })
             completion(posts)
         }
     }
