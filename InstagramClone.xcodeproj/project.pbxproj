@@ -76,6 +76,8 @@
 		70E5B7F829C5D6E600AA7587 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7F729C5D6E600AA7587 /* CommentController.swift */; };
 		70E5B7FA29C5D82B00AA7587 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7F929C5D82B00AA7587 /* CommentCell.swift */; };
 		70E5B7FC29C5DF3E00AA7587 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7FB29C5DF3E00AA7587 /* CommentInputAccessoryView.swift */; };
+		70E5B7FE29C6188500AA7587 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7FD29C6188500AA7587 /* CommentService.swift */; };
+		70E5B80029C61BF900AA7587 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7FF29C61BF900AA7587 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +150,8 @@
 		70E5B7F729C5D6E600AA7587 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
 		70E5B7F929C5D82B00AA7587 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		70E5B7FB29C5DF3E00AA7587 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
+		70E5B7FD29C6188500AA7587 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		70E5B7FF29C61BF900AA7587 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +305,7 @@
 				704F2DBE29C07ECD00DD2003 /* AuthService.swift */,
 				7054EF1F29C34C4600F51EB5 /* UserService.swift */,
 				7005EAC329C4B6130034A6E7 /* PostService.swift */,
+				70E5B7FD29C6188500AA7587 /* CommentService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 			children = (
 				7054EF2129C34EAC00F51EB5 /* User.swift */,
 				7005EAC529C4C1390034A6E7 /* Post.swift */,
+				70E5B7FF29C61BF900AA7587 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -449,6 +455,8 @@
 				704F2DBF29C07ECD00DD2003 /* AuthService.swift in Sources */,
 				705B3D0329BCB871005CFEC2 /* FeedCell.swift in Sources */,
 				70BB488E29BB30BB00D26BE3 /* ImageSelectorController.swift in Sources */,
+				70E5B7FE29C6188500AA7587 /* CommentService.swift in Sources */,
+				70E5B80029C61BF900AA7587 /* Comment.swift in Sources */,
 				705B3D1A29BF4776005CFEC2 /* AuthenticationViewModel.swift in Sources */,
 				705B3D0E29BF0105005CFEC2 /* LoginController.swift in Sources */,
 				7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */,
