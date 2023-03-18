@@ -78,6 +78,7 @@
 		70E5B7FC29C5DF3E00AA7587 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7FB29C5DF3E00AA7587 /* CommentInputAccessoryView.swift */; };
 		70E5B7FE29C6188500AA7587 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7FD29C6188500AA7587 /* CommentService.swift */; };
 		70E5B80029C61BF900AA7587 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B7FF29C61BF900AA7587 /* Comment.swift */; };
+		70E5B80229C61F8C00AA7587 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B80129C61F8C00AA7587 /* CommentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +153,7 @@
 		70E5B7FB29C5DF3E00AA7587 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		70E5B7FD29C6188500AA7587 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		70E5B7FF29C61BF900AA7587 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		70E5B80129C61F8C00AA7587 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 				70E3A54B29C352D8007D7302 /* ProfileHeaderViewModel.swift */,
 				7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */,
 				7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */,
+				70E5B80129C61F8C00AA7587 /* CommentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E5B80229C61F8C00AA7587 /* CommentViewModel.swift in Sources */,
 				7005EAC829C4C4B40034A6E7 /* PostViewModel.swift in Sources */,
 				705B3D1029BF0112005CFEC2 /* RegistrationController.swift in Sources */,
 				70BB487229B9F0E300D26BE3 /* ViewController.swift in Sources */,
