@@ -5,7 +5,7 @@
 //  Created by ibrahim uysal on 17.03.2023.
 //
 
-import Foundation
+import UIKit
 
 struct PostViewModel {
     
@@ -33,6 +33,14 @@ struct PostViewModel {
         } else {
             return "\(post.likes) like"
         }
+    }
+    
+    var likeButtonTintColor: UIColor {
+        return post.didLike ? .red : .black
+    }
+    
+    var likeButtonImage: UIImage {
+        return post.didLike ? Images.like_selected! : Images.like_unselected!
     }
     
     init(post: Post) {
