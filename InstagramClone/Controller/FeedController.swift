@@ -156,6 +156,9 @@ extension FeedController: FeedCellDelegate {
                 cell.likeButton.setImage(Images.like_selected, for: .normal)
                 cell.likeButton.tintColor = .red
                 cell.viewModel?.post.likes = post.likes + 1
+                
+                NotificationService.uploadNotification(toUid: post.ownerUid,
+                                                       type: .like, post: post)
             }
         }
     }
