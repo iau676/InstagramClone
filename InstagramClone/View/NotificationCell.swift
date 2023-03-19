@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol NotificationCellDelegate: AnyObject {
+    func cell(_ cell: NotificationCell, wantsToViewPost postId: String)
+}
+
 class NotificationCell: UITableViewCell {
     
     //MARK: - Properties
+    
+    weak var delegate: NotificationCellDelegate?
     
     var viewModel: NotificationViewModel? {
         didSet { configure() }
@@ -20,7 +26,6 @@ class NotificationCell: UITableViewCell {
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.backgroundColor = .lightGray
-        iv.image = Images.venom
         return iv
     }()
     
@@ -69,7 +74,8 @@ class NotificationCell: UITableViewCell {
     //MARK: - Selectors
     
     @objc private func handlePostTapped() {
-        
+        guard let viewModel = viewModel else { return }
+        delegate?.cell(self, wantsToViewPost: viewModel.postId)
     }
     
     //MARK: - Helpers

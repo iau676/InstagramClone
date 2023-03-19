@@ -10,6 +10,10 @@ import UIKit
 struct NotificationViewModel {
     private let notification: Notification
     
+    var postId: String {
+        return notification.postId
+    }
+    
     var postImageUrl: URL? {
         return URL(string: notification.postImageUrl ?? "")
     }
