@@ -82,6 +82,7 @@
 		70E5B80429C719F500AA7587 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B80329C719F400AA7587 /* NotificationCell.swift */; };
 		70E5B80629C71EF000AA7587 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B80529C71EF000AA7587 /* Notification.swift */; };
 		70E5B80A29C721FE00AA7587 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B80929C721FE00AA7587 /* NotificationService.swift */; };
+		70E5B80C29C72D3C00AA7587 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5B80B29C72D3C00AA7587 /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +161,7 @@
 		70E5B80329C719F400AA7587 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		70E5B80529C71EF000AA7587 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		70E5B80929C721FE00AA7587 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		70E5B80B29C72D3C00AA7587 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +345,7 @@
 				7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */,
 				7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */,
 				70E5B80129C61F8C00AA7587 /* CommentViewModel.swift */,
+				70E5B80B29C72D3C00AA7587 /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E5B80229C61F8C00AA7587 /* CommentViewModel.swift in Sources */,
+				70E5B80C29C72D3C00AA7587 /* NotificationViewModel.swift in Sources */,
 				7005EAC829C4C4B40034A6E7 /* PostViewModel.swift in Sources */,
 				705B3D1029BF0112005CFEC2 /* RegistrationController.swift in Sources */,
 				70BB487229B9F0E300D26BE3 /* ViewController.swift in Sources */,
