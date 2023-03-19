@@ -78,7 +78,9 @@ class NotificationCell: UITableViewCell {
         guard let viewModel = viewModel else { return }
         
         profileImageView.sd_setImage(with: viewModel.profileImageUrl)
-        postImageView.sd_setImage(with: viewModel.postImageUrl)
         infoLabel.attributedText = viewModel.notificationMessage
+        
+        postImageView.sd_setImage(with: viewModel.postImageUrl)
+        postImageView.isHidden = viewModel.shouldHidePostImage
     }
 }
