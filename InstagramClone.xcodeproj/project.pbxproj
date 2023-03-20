@@ -12,6 +12,7 @@
 		7005EAC429C4B6130034A6E7 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC329C4B6130034A6E7 /* PostService.swift */; };
 		7005EAC629C4C1390034A6E7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC529C4C1390034A6E7 /* Post.swift */; };
 		7005EAC829C4C4B40034A6E7 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */; };
+		7018CE2D29C8CED800233141 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018CE2C29C8CED800233141 /* ResetPasswordController.swift */; };
 		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
 		7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */; };
 		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
@@ -91,6 +92,7 @@
 		7005EAC329C4B6130034A6E7 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		7005EAC529C4C1390034A6E7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7005EAC729C4C4B40034A6E7 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		7018CE2C29C8CED800233141 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
 		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			children = (
 				705B3D0D29BF0105005CFEC2 /* LoginController.swift */,
 				705B3D0F29BF0112005CFEC2 /* RegistrationController.swift */,
+				7018CE2C29C8CED800233141 /* ResetPasswordController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				70E5B7FC29C5DF3E00AA7587 /* CommentInputAccessoryView.swift in Sources */,
 				70E3A54C29C352D8007D7302 /* ProfileHeaderViewModel.swift in Sources */,
 				7005EAC229C482AC0034A6E7 /* InputTextView.swift in Sources */,
+				7018CE2D29C8CED800233141 /* ResetPasswordController.swift in Sources */,
 				70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */,
 				70BB489229BB30D700D26BE3 /* ProfileController.swift in Sources */,
 				7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */,
