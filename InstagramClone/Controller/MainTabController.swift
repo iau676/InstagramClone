@@ -80,6 +80,7 @@ class MainTabController: UITabBarController {
         viewControllers = [feed, search, imageSelector, notifications, profile]
         
         tabBar.tintColor = .black
+        tabBar.backgroundColor = .darkGray
         
     }
     

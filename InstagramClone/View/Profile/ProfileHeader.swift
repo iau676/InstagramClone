@@ -79,14 +79,14 @@ class ProfileHeader: UICollectionReusableView {
     let listButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(Images.list, for: .normal)
-        button.tintColor = UIColor(white: 0, alpha: 0.2)
+        button.tintColor = .lightGray
         return button
     }()
     
     let bookmarkButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(Images.ribbon, for: .normal)
-        button.tintColor = UIColor(white: 0, alpha: 0.2)
+        button.tintColor = .lightGray
         return button
     }()
     
@@ -94,7 +94,7 @@ class ProfileHeader: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         
         addSubview(profileImageView)
         profileImageView.anchor(top: topAnchor, left: leftAnchor,

@@ -167,13 +167,17 @@ extension FeedController: FeedCellDelegate {
         cell.viewModel?.post.didLike.toggle()
         
         if post.didLike {
+            cell.likeButton.isEnabled = false
             PostService.unlikePost(post: post) { _ in
+                cell.likeButton.isEnabled = true
                 cell.likeButton.setImage(Images.like_unselected, for: .normal)
-                cell.likeButton.tintColor = .black
+                cell.likeButton.tintColor = .label
                 cell.viewModel?.post.likes = post.likes - 1
             }
         } else {
+            cell.likeButton.isEnabled = false
             PostService.likePost(post: post) { _ in
+                cell.likeButton.isEnabled = true
                 cell.likeButton.setImage(Images.like_selected, for: .normal)
                 cell.likeButton.tintColor = .red
                 cell.viewModel?.post.likes = post.likes + 1

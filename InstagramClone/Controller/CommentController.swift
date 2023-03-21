@@ -72,7 +72,7 @@ class CommentController: UICollectionViewController {
     private func configureCollectionView() {
         title = "Comments"
         
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemBackground
         collectionView.register(CommentCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.alwaysBounceVertical = true
         collectionView.keyboardDismissMode = .interactive

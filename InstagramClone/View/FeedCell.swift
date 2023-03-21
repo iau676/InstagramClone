@@ -41,7 +41,7 @@ class FeedCell: UICollectionViewCell {
     
     private lazy var usernameButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor.label, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
         button.addTarget(self, action: #selector(showUserProfile), for: .touchUpInside)
         return button
@@ -59,7 +59,7 @@ class FeedCell: UICollectionViewCell {
     lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(Images.like_unselected, for: .normal)
-        button.tintColor = .black
+        button.tintColor = .label
         button.addTarget(self, action: #selector(didTapLike), for: .touchUpInside)
         return button
     }()
@@ -67,7 +67,7 @@ class FeedCell: UICollectionViewCell {
     private lazy var commentButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(Images.comment, for: .normal)
-        button.tintColor = .black
+        button.tintColor = .label
         button.addTarget(self, action: #selector(didTapComments), for: .touchUpInside)
         return button
     }()
@@ -75,19 +75,21 @@ class FeedCell: UICollectionViewCell {
     private lazy var shareButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(Images.send2, for: .normal)
-        button.tintColor = .black
+        button.tintColor = .label
         return button
     }()
     
     private let likesLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 13)
+        label.textColor = .label
         return label
     }()
     
     private let captionLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .label
         return label
     }()
     
@@ -102,7 +104,7 @@ class FeedCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         
         addSubview(profileImageView)
         profileImageView.anchor(top: topAnchor, left: leftAnchor,

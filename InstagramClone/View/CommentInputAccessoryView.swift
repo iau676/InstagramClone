@@ -29,7 +29,7 @@ class CommentInputAccessoryView: UIView {
     private lazy var postButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Post", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.addTarget(self, action: #selector(handlePostTapped), for: .touchUpInside)
         return button
@@ -40,7 +40,7 @@ class CommentInputAccessoryView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         autoresizingMask = .flexibleHeight
         
         addSubview(postButton)

@@ -29,7 +29,7 @@ class SearchController: UIViewController {
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.delegate = self
         cv.dataSource = self
-        cv.backgroundColor = .white
+        cv.backgroundColor = .systemBackground
         cv.register(ProfileCell.self, forCellWithReuseIdentifier: postCellIdentifier)
         return cv
     }()
