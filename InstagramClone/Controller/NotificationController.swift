@@ -46,7 +46,7 @@ class NotificationController: UITableViewController {
     //MARK: - Helpers
     
     private func configureTableView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         title = "Notifications"
         
         tableView.register(NotificationCell.self, forCellReuseIdentifier: reuseIdentifier)

@@ -69,6 +69,7 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         configureUI()
         configureNotificationObservers()
+        hideKeyboardWhenTappedAround()
     }
     
     //MARK: - Selectors
@@ -77,9 +78,12 @@ class LoginController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
+        showLoader(true)
         AuthService.logUserIn(withEmail: email, password: password) { result, error in
+            self.showLoader(false)
             if let error = error {
                 print("DEBUG: Failed to log user in \(error)")
+                self.showMessage(withTitle: "Failed", message: "\(error.localizedDescription)")
                 return
             }
             self.delegate?.authenticationDidComplete()

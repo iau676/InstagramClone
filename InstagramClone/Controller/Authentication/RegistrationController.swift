@@ -64,6 +64,7 @@ final class RegistrationController: UIViewController {
         super.viewDidLoad()
         configureUI()
         configureNotificationObservers()
+        hideKeyboardWhenTappedAround()
     }
     
     //MARK: - Selectors
@@ -79,9 +80,12 @@ final class RegistrationController: UIViewController {
                                           fullname: fullname, username: username,
                                           profileImage: profileImage)
         
+        showLoader(true)
         AuthService.registerUser(withCredentials: credentials) { error in
+            self.showLoader(false)
             if let error = error {
                 print("DEBUG: Failed to register user \(error)")
+                self.showMessage(withTitle: "Failed", message: "\(error.localizedDescription)")
                 return
             }
             

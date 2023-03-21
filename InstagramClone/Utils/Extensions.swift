@@ -8,6 +8,8 @@
 import UIKit
 import JGProgressHUD
 
+//MARK: - UIViewController
+
 extension UIViewController {
     static let hud = JGProgressHUD(style: .dark)
     
@@ -30,11 +32,23 @@ extension UIViewController {
     }
     
     func showMessage(withTitle title: String, message: String) {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-        }
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
+
+//MARK: - UIButton
 
 extension UIButton {
     func attributedTitle(firstPart: String, secondPart: String) {
@@ -49,6 +63,8 @@ extension UIButton {
         self.setAttributedTitle(attributedTitle, for: .normal)
     }
 }
+
+//MARK: - UIView
 
 extension UIView {
     func anchor(top: NSLayoutYAxisAnchor? = nil,

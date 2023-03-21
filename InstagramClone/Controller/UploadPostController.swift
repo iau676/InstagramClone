@@ -88,7 +88,7 @@ class UploadPostController: UIViewController {
     //MARK: - Helpers
     
     private func configureUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         title = "Upload Post"
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel,
