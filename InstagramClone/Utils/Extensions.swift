@@ -154,3 +154,29 @@ extension UIView {
                bottom: view.bottomAnchor, right: view.rightAnchor)
     }
 }
+
+//MARK: - String
+
+extension String {
+    
+    subscript(offset: Int) -> Character {
+        self[index(startIndex, offsetBy: offset)]
+    }
+    
+    func replace(_ index: Int, _ newChar: String) -> String {
+        let nchar: Character = newChar[0]
+        var chars = Array(self)     // gets an array of characters
+        chars[index] = nchar
+        let modifiedString = String(chars)
+        return modifiedString
+    }
+    
+    func replace(string:String, replacement:String) -> String {
+        return self.replacingOccurrences(of: string, with: replacement, options: NSString.CompareOptions.literal, range: nil)
+    }
+    
+    func removeWhitespace() -> String {
+        return self.replace(string: " ", replacement: "")
+    }
+    
+}
