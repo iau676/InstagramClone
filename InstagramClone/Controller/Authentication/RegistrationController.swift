@@ -81,15 +81,20 @@ final class RegistrationController: UIViewController {
                                           profileImage: profileImage)
         
         showLoader(true)
-        AuthService.registerUser(withCredentials: credentials) { error in
-            self.showLoader(false)
-            if let error = error {
-                print("DEBUG: Failed to register user \(error)")
-                self.showMessage(withTitle: "Failed", message: "\(error.localizedDescription)")
-                return
+        AuthService.checkUserName(newUserName: username) { exists in
+            if exists {
+                self.showLoader(false)
+                self.showMessage(withTitle: "Failed", message: "username already exists")
+            } else {
+                AuthService.registerUser(withCredentials: credentials) { error in
+                    self.showLoader(false)
+                    if let error = error {
+                        self.showMessage(withTitle: "Failed", message: "\(error.localizedDescription)")
+                        return
+                    }
+                    self.delegate?.authenticationDidComplete()
+                }
             }
-            
-            self.delegate?.authenticationDidComplete()
         }
     }
     

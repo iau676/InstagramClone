@@ -27,7 +27,7 @@ struct AuthService {
         ImageUploader.uploadImage(image: credentials.profileImage) { imageUrl in
             Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { result, error in
                 if let error = error {
-                    print("DEBUG: Failed to register user \(error)")
+                    completion(error)
                     return
                 }
                 
@@ -47,5 +47,18 @@ struct AuthService {
     static func resetPassword(withEmail email: String, completion: @escaping((Error?) -> Void)) {
         Auth.auth().sendPasswordReset(withEmail: email, completion: completion)
     }
-    
+
+    static func checkUserName(newUserName: String, completion: @escaping(Bool) -> Void) {
+        COLLECTION_USERS.getDocuments { snapshot, error in
+            guard let snapshot = snapshot else { return }
+            let users = snapshot.documents.map({ User(dictionary: $0.data()) })
+            let usernames = users.map({ $0.username })
+            
+            if usernames.contains(newUserName) {
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
+    }
 }
