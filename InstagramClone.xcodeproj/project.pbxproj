@@ -15,7 +15,6 @@
 		7018CE2D29C8CED800233141 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018CE2C29C8CED800233141 /* ResetPasswordController.swift */; };
 		7042BB1429C3851B00C1BAA3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1329C3851B00C1BAA3 /* UserCell.swift */; };
 		7042BB1629C3918800C1BAA3 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */; };
-		704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */; };
 		704F2DBD29C07EB800DD2003 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBC29C07EB800DD2003 /* ImageUploader.swift */; };
 		704F2DBF29C07ECD00DD2003 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DBE29C07ECD00DD2003 /* AuthService.swift */; };
 		704F2DC129C0EA5500DD2003 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F2DC029C0EA5500DD2003 /* ProfileCell.swift */; };
@@ -57,10 +56,11 @@
 		705B3D1029BF0112005CFEC2 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D0F29BF0112005CFEC2 /* RegistrationController.swift */; };
 		705B3D1429BF143B005CFEC2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D1329BF143B005CFEC2 /* CustomTextField.swift */; };
 		705B3D1A29BF4776005CFEC2 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B3D1929BF4776005CFEC2 /* AuthenticationViewModel.swift */; };
-		705B3D2C29C0632F005CFEC2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 705B3D2B29C0632F005CFEC2 /* SDWebImage */; };
-		705B3D2F29C063AA005CFEC2 /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 705B3D2E29C063AA005CFEC2 /* ActiveLabel */; };
-		705B3D3229C063EB005CFEC2 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 705B3D3129C063EB005CFEC2 /* JGProgressHUD */; };
-		705B3D3529C0656E005CFEC2 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 705B3D3429C0656E005CFEC2 /* YPImagePicker */; };
+		7063E8F729E5CC95004A22F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7063E8F629E5CC95004A22F0 /* GoogleService-Info.plist */; };
+		7063E8FA29E5CDB8004A22F0 /* ActiveLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 7063E8F929E5CDB8004A22F0 /* ActiveLabel */; };
+		7063E8FD29E5CE37004A22F0 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7063E8FC29E5CE37004A22F0 /* JGProgressHUD */; };
+		7063E90029E5CE6A004A22F0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7063E8FF29E5CE6A004A22F0 /* SDWebImage */; };
+		7063E90329E5CF66004A22F0 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 7063E90229E5CF66004A22F0 /* YPImagePicker */; };
 		70BB486E29B9F0E300D26BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB486D29B9F0E300D26BE3 /* AppDelegate.swift */; };
 		70BB487029B9F0E300D26BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB486F29B9F0E300D26BE3 /* SceneDelegate.swift */; };
 		70BB487229B9F0E300D26BE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB487129B9F0E300D26BE3 /* ViewController.swift */; };
@@ -95,7 +95,6 @@
 		7018CE2C29C8CED800233141 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
 		7042BB1329C3851B00C1BAA3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7042BB1529C3918800C1BAA3 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
-		704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		704F2DBC29C07EB800DD2003 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		704F2DBE29C07ECD00DD2003 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		704F2DC029C0EA5500DD2003 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -139,6 +138,7 @@
 		705B3D0F29BF0112005CFEC2 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		705B3D1329BF143B005CFEC2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		705B3D1929BF4776005CFEC2 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		7063E8F629E5CC95004A22F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		70BB486A29B9F0E300D26BE3 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BB486D29B9F0E300D26BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70BB486F29B9F0E300D26BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7063E90329E5CF66004A22F0 /* YPImagePicker in Frameworks */,
 				704F2F2129C1CA3400DD2003 /* Libuv-gRPC.xcframework in Frameworks */,
 				704F2F0A29C1CA2F00DD2003 /* FirebaseFirestore.xcframework in Frameworks */,
 				704F2F1429C1CA3000DD2003 /* FirebaseDatabaseSwift.xcframework in Frameworks */,
@@ -182,21 +183,20 @@
 				704F2F1629C1CA3000DD2003 /* FirebaseAuthInterop.xcframework in Frameworks */,
 				704F2F1829C1CA3100DD2003 /* abseil.xcframework in Frameworks */,
 				704F2F1B29C1CA3200DD2003 /* FirebaseAnalyticsSwift.xcframework in Frameworks */,
-				705B3D2C29C0632F005CFEC2 /* SDWebImage in Frameworks */,
+				7063E8FA29E5CDB8004A22F0 /* ActiveLabel in Frameworks */,
 				704F2F1729C1CA3000DD2003 /* GoogleUtilities.xcframework in Frameworks */,
-				705B3D3229C063EB005CFEC2 /* JGProgressHUD in Frameworks */,
 				704F2F1929C1CA3100DD2003 /* FBLPromises.xcframework in Frameworks */,
-				705B3D2F29C063AA005CFEC2 /* ActiveLabel in Frameworks */,
 				704F2F0C29C1CA2F00DD2003 /* GTMSessionFetcher.xcframework in Frameworks */,
 				704F2F1329C1CA2F00DD2003 /* FirebaseCoreInternal.xcframework in Frameworks */,
 				704F2F1E29C1CA3300DD2003 /* FirebaseCoreExtension.xcframework in Frameworks */,
 				704F2F2329C1CA3400DD2003 /* FirebaseDatabase.xcframework in Frameworks */,
 				704F2F2229C1CA3400DD2003 /* BoringSSL-GRPC.xcframework in Frameworks */,
 				704F2F0B29C1CA2F00DD2003 /* leveldb-library.xcframework in Frameworks */,
-				705B3D3529C0656E005CFEC2 /* YPImagePicker in Frameworks */,
 				704F2F1A29C1CA3100DD2003 /* FirebaseAppCheckInterop.xcframework in Frameworks */,
 				704F2F1529C1CA3000DD2003 /* FirebaseInstallations.xcframework in Frameworks */,
+				7063E8FD29E5CE37004A22F0 /* JGProgressHUD in Frameworks */,
 				704F2F2429C1CA3500DD2003 /* nanopb.xcframework in Frameworks */,
+				7063E90029E5CE6A004A22F0 /* SDWebImage in Frameworks */,
 				704F2F1229C1CA2F00DD2003 /* FirebaseAuth.xcframework in Frameworks */,
 				704F2F1029C1CA2F00DD2003 /* GoogleAppMeasurement.xcframework in Frameworks */,
 				704F2F1129C1CA2F00DD2003 /* gRPC-C++.xcframework in Frameworks */,
@@ -294,7 +294,7 @@
 				70BB487629B9F0E900D26BE3 /* Assets.xcassets */,
 				70BB487829B9F0E900D26BE3 /* LaunchScreen.storyboard */,
 				70BB487B29B9F0E900D26BE3 /* Info.plist */,
-				704F2DBA29C0758700DD2003 /* GoogleService-Info.plist */,
+				7063E8F629E5CC95004A22F0 /* GoogleService-Info.plist */,
 				704F2E7729C1C34600DD2003 /* Firebase.h */,
 				704F2E7829C1C34F00DD2003 /* module.modulemap */,
 				704F2F2729C1CF6600DD2003 /* FirebaseRef */,
@@ -396,10 +396,10 @@
 			);
 			name = InstagramClone;
 			packageProductDependencies = (
-				705B3D2B29C0632F005CFEC2 /* SDWebImage */,
-				705B3D2E29C063AA005CFEC2 /* ActiveLabel */,
-				705B3D3129C063EB005CFEC2 /* JGProgressHUD */,
-				705B3D3429C0656E005CFEC2 /* YPImagePicker */,
+				7063E8F929E5CDB8004A22F0 /* ActiveLabel */,
+				7063E8FC29E5CE37004A22F0 /* JGProgressHUD */,
+				7063E8FF29E5CE6A004A22F0 /* SDWebImage */,
+				7063E90229E5CF66004A22F0 /* YPImagePicker */,
 			);
 			productName = InstagramClone;
 			productReference = 70BB486A29B9F0E300D26BE3 /* InstagramClone.app */;
@@ -430,10 +430,10 @@
 			);
 			mainGroup = 70BB486129B9F0E300D26BE3;
 			packageReferences = (
-				705B3D2A29C0632F005CFEC2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				705B3D2D29C063AA005CFEC2 /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
-				705B3D3029C063EB005CFEC2 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
-				705B3D3329C0656E005CFEC2 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+				7063E8F829E5CDB8004A22F0 /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
+				7063E8FB29E5CE37004A22F0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				7063E8FE29E5CE6A004A22F0 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7063E90129E5CF66004A22F0 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 70BB486B29B9F0E300D26BE3 /* Products */;
 			projectDirPath = "";
@@ -450,10 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70BB487A29B9F0E900D26BE3 /* LaunchScreen.storyboard in Resources */,
-				704F2DBB29C0758700DD2003 /* GoogleService-Info.plist in Resources */,
 				70BB487729B9F0E900D26BE3 /* Assets.xcassets in Resources */,
 				70BB487529B9F0E300D26BE3 /* Main.storyboard in Resources */,
 				704F2F2629C1CA7800DD2003 /* gRPCCertificates-Cpp.bundle in Resources */,
+				7063E8F729E5CC95004A22F0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,15 +738,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		705B3D2A29C0632F005CFEC2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		705B3D2D29C063AA005CFEC2 /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */ = {
+		7063E8F829E5CDB8004A22F0 /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/optonaut/ActiveLabel.swift.git";
 			requirement = {
@@ -754,7 +746,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		705B3D3029C063EB005CFEC2 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+		7063E8FB29E5CE37004A22F0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
 			requirement = {
@@ -762,7 +754,15 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		705B3D3329C0656E005CFEC2 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+		7063E8FE29E5CE6A004A22F0 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7063E90129E5CF66004A22F0 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
 			requirement = {
@@ -773,24 +773,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		705B3D2B29C0632F005CFEC2 /* SDWebImage */ = {
+		7063E8F929E5CDB8004A22F0 /* ActiveLabel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 705B3D2A29C0632F005CFEC2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		705B3D2E29C063AA005CFEC2 /* ActiveLabel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 705B3D2D29C063AA005CFEC2 /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */;
+			package = 7063E8F829E5CDB8004A22F0 /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */;
 			productName = ActiveLabel;
 		};
-		705B3D3129C063EB005CFEC2 /* JGProgressHUD */ = {
+		7063E8FC29E5CE37004A22F0 /* JGProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 705B3D3029C063EB005CFEC2 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			package = 7063E8FB29E5CE37004A22F0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
 		};
-		705B3D3429C0656E005CFEC2 /* YPImagePicker */ = {
+		7063E8FF29E5CE6A004A22F0 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 705B3D3329C0656E005CFEC2 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			package = 7063E8FE29E5CE6A004A22F0 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		7063E90229E5CF66004A22F0 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7063E90129E5CF66004A22F0 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
 			productName = YPImagePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
